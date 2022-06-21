@@ -28,7 +28,7 @@ const Form = () => {
           type="text"
           placeholder="✍️ Add Task...."
           name="task"
-          value={newTodo as any}
+          value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
         />
         <i className="fa-solid fa-plus fa-xl" onClick={handleSubmit}></i>
