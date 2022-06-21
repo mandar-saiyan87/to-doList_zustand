@@ -12,8 +12,8 @@ interface TodoItem {
 interface AppState {
   // todoList: String[];
   todoList: TodoItem[];
-  // newTodo: String,
-  // setNewTodo: (todo: String) => void;
+  newTodo: String,
+  setNewTodo: (todo: String) => void;
   addTodo: (task: String) => void;
   removeTodo: (id: Number) => void;
   handleStrike: (id: Number) => void;
@@ -21,8 +21,8 @@ interface AppState {
 
 const useStore = create<AppState>((set) => ({
   todoList: [],
-  // newTodo: "",
-  // setNewTodo: (todo) => set({ newTodo: todo }),
+  newTodo: "",
+  setNewTodo: (todo) => set({ newTodo: todo }),
   addTodo: (task) => set((state) => ({
     // todoList: [...state.todoList, newTodo]
     todoList: [...state.todoList, { task, status: '' }]
