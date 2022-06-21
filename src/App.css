@@ -1,0 +1,137 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+} */
+
+body {
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  min-height: 100vh;
+  /* font-family: "helvetica neue"; */
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+}
+
+.notetitle {
+  max-width: 350px;
+  background-color: #a683e3;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.notetitle h1 {
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.add-item {
+  display: flex;
+  width: 360px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* margin-top: 45px; */
+  /* margin-bottom: 50px; */
+
+}
+
+.fa-plus {
+  position: absolute;
+  margin-left: 20rem;
+  margin-top: 1.3rem;
+  color: gray;
+}
+
+.fa-plus:hover {
+  color: rgb(71, 71, 71);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: slateblue;
+  letter-spacing: 0.4px;
+  font-size: medium;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.showitem {
+  display: flex;
+  width: 400px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px 10px;
+}
+
+
+.showitemtext {
+  width: inherit;
+  font-size: 20px;
+  font-weight: normal;
+  color: #a683e3;
+  cursor: pointer;
+}
+
+
+.fa-trash-can {
+  color: rgb(236, 154, 124);
+  cursor: pointer;
+}
+
+.fa-trash-can:hover {
+  color: orangered;
+}
