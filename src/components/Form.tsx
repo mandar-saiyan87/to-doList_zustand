@@ -3,14 +3,15 @@ import useStore from './AppStore'
 
 const Form = () => {
 
+  // Import functions and state from zustand store
   const addTodo = useStore((state) => state.addTodo)
   const newTodo = useStore((state) => state.newTodo)
   const setNewTodo = useStore((state) => state.setNewTodo)
 
-  // const [newTodo, setNewTodo] = useState("");
 
-
-  function handleSubmit() {
+  // submit new todo item
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>): void => {
+    e.preventDefault()
     if (newTodo.length !== 0) {
       addTodo(newTodo)
     }
